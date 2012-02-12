@@ -1,0 +1,9 @@
+
+- Release a new Release
+
+  mvn -B -DdevelopmentVersion=1.1.0-SNAPSHOT release:prepare release:perform
+
+- Create maintenance branch will be done from the tag:
+
+  mvn -B  -DupdateBranchVersions=true -DreleaseVersion=1.0.1-SNAPSHOT -DbranchName=MB-1.0 release:branch
+
