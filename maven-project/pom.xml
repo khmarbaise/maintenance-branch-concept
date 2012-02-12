@@ -11,6 +11,34 @@
   <name>Maintenance Branch Concept</name>
   <url>http://www.soebes.de</url>
 
+ <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+  </properties>
+
+  <scm>
+    <connection>scm:svn:file://${basedir}/../repos/maintenance-branch/trunk/</connection>
+    <developerConnection>scm:svn:file://${basedir}/../repos/maintenance-branch/trunk/</developerConnection>
+    <url>http://svn.url.viewvc</url>
+  </scm>
+
+  <!--  Complete new location for distributionManagement to make a complete release cycle test possible. -->
+  <distributionManagement>
+    <repository>
+      <id>staging</id>
+      <url>file://${basedir}/../releases/release/</url>
+    </repository>
+    <snapshotRepository>
+      <id>snapshots</id>
+      <url>file://${basedir}/../releases/release/</url>
+    </snapshotRepository>
+    <site>
+      <id>site.server</id>
+      <url>file://${basedir}/../releases/release/</url>
+    </site>
+  </distributionManagement>
+
+
   <build>
     <plugins>
       <plugin>
