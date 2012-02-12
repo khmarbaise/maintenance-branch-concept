@@ -1,9 +1,22 @@
+- Lets assume we have the following version schemata (trunk)
+
+  1.0.0-SNAPSHOT
+  ...
+  1.0.0 (RELEASE)
+  1.1.0-SNAPSHOT
+  ...
+  1.1.0 (RELEASE)
+  1.2.0-SNAPSHOT
+  ...
+  1.2.0 (RELEASE)
+  ...
+
 
 - Release a new Release
 
   mvn -B -DdevelopmentVersion=1.1.0-SNAPSHOT release:prepare release:perform
 
-- Create maintenance branch will be done from the tag:
+- maintenance branch creation will be done from the tag (means to checkout the tag):
 
   mvn -B  -DupdateBranchVersions=true -DupdateWorkingCopyVersions=false -DreleaseVersion=1.0.1-SNAPSHOT -DbranchName=MB-1.0 release:branch
 
