@@ -5,5 +5,5 @@
 
 - Create maintenance branch will be done from the tag:
 
-  mvn -B  -DupdateBranchVersions=true -DreleaseVersion=1.0.1-SNAPSHOT -DbranchName=MB-1.0 release:branch
+  mvn -B  -DupdateBranchVersions=true -DupdateWorkingCopyVersions=false -DreleaseVersion=1.0.1-SNAPSHOT -DbranchName=MB-1.0 release:branch
 
