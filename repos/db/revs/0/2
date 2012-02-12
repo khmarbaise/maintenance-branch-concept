@@ -1,0 +1,64 @@
+id: 4-2.0.r2/0
+type: dir
+count: 0
+cpath: /maintenance-branch/trunk
+copyroot: 0 /
+
+id: 1-2.0.r2/82
+type: dir
+count: 0
+cpath: /maintenance-branch/branches
+copyroot: 0 /
+
+id: 3-2.0.r2/168
+type: dir
+count: 0
+cpath: /maintenance-branch/tags
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 15
+dir 1-2.0.r2/82
+K 4
+tags
+V 16
+dir 3-2.0.r2/168
+K 5
+trunk
+V 14
+dir 4-2.0.r2/0
+END
+ENDREP
+id: 0-1.0.r2/363
+type: dir
+pred: 0-1.0.r1/0
+count: 1
+text: 2 251 99 99 d4164cc0204348db1828b28569e82dd9
+cpath: /maintenance-branch
+copyroot: 0 /
+
+PLAIN
+K 18
+maintenance-branch
+V 16
+dir 0-1.0.r2/363
+END
+ENDREP
+id: 0.0.r2/572
+type: dir
+pred: 0.0.r1/137
+count: 2
+text: 2 509 50 50 9803032cf044c30dec59137795a0e304
+cpath: /
+copyroot: 0 /
+
+_4.0.t1-1 add-dir false false /maintenance-branch/trunk
+
+_1.0.t1-1 add-dir false false /maintenance-branch/branches
+
+_3.0.t1-1 add-dir false false /maintenance-branch/tags
+
+
+572 698
